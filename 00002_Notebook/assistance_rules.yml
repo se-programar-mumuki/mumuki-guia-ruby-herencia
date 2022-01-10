@@ -1,0 +1,8 @@
+---
+rules:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    only_these_expectations_failed:
+    - Notebook DeclaresComputationWithArity1:utilizar!
+  then: a la hora de `utilizar!` una `Notebook` es necesario especificar cuántos minutos
+    lo haremos

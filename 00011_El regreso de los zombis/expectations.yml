@@ -1,0 +1,20 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: SuperZombi
+  inspection: Inherits:Zombi
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: SuperZombi
+  inspection: Not:Declares:gritar
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: SuperZombi
+  inspection: Not:Declares:salud
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: SuperZombi
+  inspection: Not:Declares:sin_vida?
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Zombi
+  inspection: Not:Declares:regenerarse!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: SuperZombi
+  inspection: Not:Declares:initialize

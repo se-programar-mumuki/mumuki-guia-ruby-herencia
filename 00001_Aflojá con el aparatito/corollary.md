@@ -1,0 +1,3 @@
+¡Excelente! :raised_hands:
+
+Pero bien sabemos que no solo utilizamos celulares y que en los últimos años las computadoras portatiles le ganaron terreno a las de escritorio...

@@ -1,0 +1,1 @@
+Si sabemos que tanto notebooks como celulares responden de la misma manera al mensaje `descargado?`, ¿vamos a repetir ese método en ambas clases? :face_with_hand_over_mouth:

@@ -1,0 +1,71 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Declares:MedioDeTransporte
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Declares:Auto
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Declares:Moto
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Auto
+  inspection: Inherits:MedioDeTransporte
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Moto
+  inspection: Inherits:MedioDeTransporte
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Auto
+  inspection: DeclaresMethod:maximo_personas
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Auto
+  inspection: DeclaresMethod:recorrer!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Moto
+  inspection: DeclaresMethod:maximo_personas
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Moto
+  inspection: DeclaresMethod:recorrer!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: MedioDeTransporte
+  inspection: DeclaresMethod:initialize
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: MedioDeTransporte
+  inspection: DeclaresMethod:cargar_combustible!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: MedioDeTransporte
+  inspection: DeclaresMethod:entran?
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: MedioDeTransporte
+  inspection: Not:DeclaresMethod:recorrer!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Auto
+  inspection: Not:DeclaresMethod:initialize
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Auto
+  inspection: Not:DeclaresMethod:cargar_combustible
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Auto
+  inspection: Not:DeclaresMethod:entran?
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Moto
+  inspection: Not:DeclaresMethod:initialize
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Moto
+  inspection: Not:DeclaresMethod:cargar_combustible
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Moto
+  inspection: Not:DeclaresMethod:entran?
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: entran?
+  inspection: Not:Assigns
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: entran?
+  inspection: Not:UsesIf
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: maximo_personas
+  inspection: Not:Assigns
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: MedioDeTransporte
+  inspection: DeclaresComputationWithArity1:entran?

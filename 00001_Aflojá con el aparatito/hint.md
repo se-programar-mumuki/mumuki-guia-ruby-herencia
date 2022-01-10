@@ -1,0 +1,1 @@
+No nos vamos a preocupar por ahora en que tenga suficiente `@bateria` para poder utilizarlo. :wink: 

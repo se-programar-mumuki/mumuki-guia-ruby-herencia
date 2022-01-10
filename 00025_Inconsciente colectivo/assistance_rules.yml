@@ -1,0 +1,8 @@
+---
+rules:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  when: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    only_these_expectations_failed:
+    - Colectivo DeclaresComputationWithArity1:entran?
+  then: si bien ahora el `Colectivo` no necesita el parámetro de `entran?`, lo mantenemos
+    por polimorfismo

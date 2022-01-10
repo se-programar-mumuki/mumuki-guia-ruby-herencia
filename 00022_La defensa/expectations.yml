@@ -1,0 +1,41 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Declares:Persona
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Sobreviviente
+  inspection: Inherits:Persona
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Aliado
+  inspection: Inherits:Persona
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Persona
+  inspection: DeclaresMethod:energia
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Persona
+  inspection: DeclaresMethod:atacar!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Persona
+  inspection: Not:DeclaresMethod:beber!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Sobreviviente
+  inspection: DeclaresMethod:beber!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Sobreviviente
+  inspection: Not:DeclaresMethod:atacar!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Sobreviviente
+  inspection: Not:DeclaresMethod:energia
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Aliado
+  inspection: DeclaresMethod:beber!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Aliado
+  inspection: DeclaresMethod:atacar!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Aliado
+  inspection: Not:DeclaresMethod:energia
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Aliado
+  inspection: SourceContains:super

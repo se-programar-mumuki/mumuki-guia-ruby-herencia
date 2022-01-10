@@ -1,0 +1,17 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Declares:Notebook
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Notebook
+  inspection: DeclaresMethod:initialize
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Notebook
+  inspection: DeclaresMethod:utilizar!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Notebook
+  inspection: DeclaresMethod:cargar_a_tope!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Notebook
+  inspection: DeclaresComputationWithArity1:utilizar!

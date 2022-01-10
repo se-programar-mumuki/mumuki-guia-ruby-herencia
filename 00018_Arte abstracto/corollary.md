@@ -1,0 +1,1 @@
+En otros lenguajes del paradigma de objetos hay maneras de explicitar que una clase es abstracta. Sin embargo, en Ruby no tenemos manera de diferenciarlas a simple vista. Al no haber una diferencia sintáctica, es decir, cómo definimos estas clases, es responsabilidad de quien programa no instanciar aquellas clases que queremos que sean abstractas. :nerd:

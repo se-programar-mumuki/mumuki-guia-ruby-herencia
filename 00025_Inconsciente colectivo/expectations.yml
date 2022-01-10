@@ -1,0 +1,14 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Colectivo
+  inspection: Inherits:MedioDeTransporte
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Colectivo
+  inspection: DeclaresMethod:initialize
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Colectivo
+  inspection: DeclaresMethod:entran?
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Colectivo
+  inspection: DeclaresComputationWithArity1:entran?

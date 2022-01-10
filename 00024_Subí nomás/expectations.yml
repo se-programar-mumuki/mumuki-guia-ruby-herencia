@@ -1,0 +1,23 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Declares:Colectivo
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Colectivo
+  inspection: Inherits:MedioDeTransporte
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Colectivo
+  inspection: DeclaresMethod:recorrer!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Colectivo
+  inspection: DeclaresMethod:maximo_personas
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Colectivo
+  inspection: Not:DeclaresMethod:initialize
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Colectivo
+  inspection: Not:DeclaresMethod:cargar_combustible!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Colectivo
+  inspection: Not:DeclaresMethod:entran?

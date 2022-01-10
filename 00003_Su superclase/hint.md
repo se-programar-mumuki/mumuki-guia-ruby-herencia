@@ -1,0 +1,1 @@
+No te olvidés que ahora `Celular` y `Notebook` deben heredar de `Dispositivo`. :smile:

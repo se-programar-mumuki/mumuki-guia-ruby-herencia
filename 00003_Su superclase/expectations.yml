@@ -1,0 +1,38 @@
+---
+expectations:
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: "*"
+  inspection: Declares:Dispositivo
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Dispositivo
+  inspection: DeclaresMethod:initialize
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Dispositivo
+  inspection: DeclaresMethod:cargar_a_tope!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Dispositivo
+  inspection: Not:DeclaresMethod:utilizar!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Celular
+  inspection: DeclaresMethod:utilizar!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Notebook
+  inspection: DeclaresMethod:utilizar!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Celular
+  inspection: Not:DeclaresMethod:initialize
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Celular
+  inspection: Not:DeclaresMethod:cargar_a_tope!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Notebook
+  inspection: Not:DeclaresMethod:initialize
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Notebook
+  inspection: Not:DeclaresMethod:cargar_a_tope!
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Celular
+  inspection: Inherits:Dispositivo
+- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+  binding: Notebook
+  inspection: Inherits:Dispositivo

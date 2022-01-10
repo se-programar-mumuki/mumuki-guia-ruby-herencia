@@ -1,0 +1,1 @@
+:warning: Prestá atención: lo que hicimos aquí es _parecido_ a la herencia de los dispositivos, pero no igual. En nuestro ejemplo anterior, `Dispositivo` es una clase abstracta, porque nunca la vamos a instanciar, y nuestros dos dispositivos heredan de ella. Pero, ¿no queremos instanciar a la clase `Zombi`?

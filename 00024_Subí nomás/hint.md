@@ -1,0 +1,1 @@
+Para saber que métodos definir en la clase `Colectivo` fijate cuáles definiste en `Auto` y `Moto`; ambas clases están en la `Biblioteca`. :wink: 
